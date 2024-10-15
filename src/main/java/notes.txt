@@ -5,11 +5,11 @@ Programs:
 * ActionHandlerController.java
 * ActionHandlerInterceptor.java
 Notes:
-* The HandlerInterceptorAdapter abstract class for the AsyncHandlerInterceptor interface.
 * The HandlerInterceptorAdapter is sub class of AsyncHandlerInterceptor interface.
 * By extending HandlerInterceptorAdapter class four methods are inherited from it's super classes, those are below:
 * default boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception
 * This preHandle method can execute before the execution of handler.
+* If preHandle method return true then only handler method will execute.
 * default void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable ModelAndView modelAndView) throws Exception
 * This postHandle method can execute after successful execution of handler.
 * default void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex) throws Exception

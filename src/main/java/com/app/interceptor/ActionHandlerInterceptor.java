@@ -12,7 +12,6 @@ public class ActionHandlerInterceptor extends HandlerInterceptorAdapter {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		System.out.println("From preHandle method in ActionHandlerInterceptor class");
 		return true;
-		
 	}
 	
 	@Override
